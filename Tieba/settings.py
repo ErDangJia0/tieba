@@ -13,7 +13,10 @@ BOT_NAME = 'Tieba'
 
 SPIDER_MODULES = ['Tieba.spiders']
 NEWSPIDER_MODULE = 'Tieba.spiders'
-IMAGES_STORE = "E:/images"
+
+IMAGES_URLS_FIELD = "url"  # 对应item里面设定的字段，取到图片的url
+IMAGES_RESULT_FIELD = "path"
+IMAGES_STORE = "E:\\images"
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'Tieba (+http://www.yourdomain.com)'
 LOG_LEVEL = 'WARNING'
